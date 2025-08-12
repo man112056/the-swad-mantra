@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Alert, Button, FlatList, Image, Pressable, StyleSheet, Text, TextInput, View } from "react-native";
+import { Alert, Button, Image, Pressable, StyleSheet, Text, TextInput, View } from "react-native";
 
 export default function WelcomeMessage(){
 
@@ -46,14 +46,14 @@ export default function WelcomeMessage(){
             }
          </ScrollView> */}
 
-         <FlatList
+         {/* <FlatList
           data={scrollingItems}
           keyExtractor={item => item.id}
           renderItem={({ item }) => (
            <Text>{item.title}</Text>
          
       )}
-        />
+        /> */}
 
 
         </View>
