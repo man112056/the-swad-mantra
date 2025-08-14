@@ -4,6 +4,7 @@ import { Platform, StyleSheet } from 'react-native';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import TwoColumnGrid from '@/components/TwoColumnGrid';
 import WelcomeMessage from '@/components/WelcomeMessage';
 
 export default function HomeScreen() {
@@ -21,9 +22,13 @@ export default function HomeScreen() {
         {/* <HelloWave /> */}
         <WelcomeMessage />
       </ThemedView>
+          
+
       
 
       <ThemedView style={styles.stepContainer}>
+                <TwoColumnGrid/>
+
         <ThemedText type="subtitle">Step 1: Try it</ThemedText>
         <ThemedText>
           Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
