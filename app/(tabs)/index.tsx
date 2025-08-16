@@ -6,6 +6,8 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import TwoColumnGrid from '@/components/TwoColumnGrid';
 import WelcomeMessage from '@/components/WelcomeMessage';
+import SampleUseEffect from '@/components/hooks/SampleUseEffect';
+import SampleUseState from '@/components/hooks/SampleUseState';
 
 export default function HomeScreen() {
   return (
@@ -21,10 +23,9 @@ export default function HomeScreen() {
         <ThemedText type="title"></ThemedText>
         {/* <HelloWave /> */}
         <WelcomeMessage />
+        <SampleUseState/>
+        <SampleUseEffect/>
       </ThemedView>
-          
-
-      
 
       <ThemedView style={styles.stepContainer}>
                 <TwoColumnGrid/>
