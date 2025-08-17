@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 export default function TwoColumnGrid() {
   return (
     <View style={styles.container}>
-      {[...Array(26).keys()].map((i) => (
+      {[...Array(10).keys()].map((i) => (
         <View key={i} style={styles.box}>
           <Text style={styles.boxText}>Box {i + 1}</Text>
         </View>
